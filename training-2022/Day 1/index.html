@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/demo-logo-black.png" alt="Logo image"/>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Owners</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Insurance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Add new person</h2>
+        <div class="body">
+            <form>
+                <div class="form-field grid-col-span-2">
+                    <label for="firs-name">First Name</label>
+                    <input type="text" id="firs-name"/>
+                </div>
+                <div class="form-field grid-col-span-2">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name"/>
+                </div>
+                <div class="form-field">
+                    <label for="birthdate">Birth Date</label>
+                    <input type="date" id="birthdate"/>
+                </div>
+                <div class="form-field">
+                    <label for="cnp">Identification Number</label>
+                    <input type="text" id="cnp"/>
+                </div>
+                <div class="form-field" id="gender-select">
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="1">Masculine</option>
+                        <option value="2">Feminine</option>
+                        <option value="3">N/A</option>
+                    </select>
+                </div>
+                <div class="action-buttons">
+                    <button id="submit-button" type="submit">Add person</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
