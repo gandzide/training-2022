@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <title>Car monitoring</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/dom-manipulate.js"></script>
 </head>
 <body>
     <header>
-        <img class="logo" src="img/demo-logo-black.png" alt="Logo image"/>
-        <nav>
+        <h1 class="logo">Hello</h1>
+        <nav id="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Owners</a></li>
-                <li><a href="#">Cars</a></li>
-                <li><a href="#">Insurance</a></li>
+                <li onclick="selectPageByIndex(0, event)" class="active"><a href="#">Home</a></li>
+                <li onclick="selectPageByIndex(1, event)"><a href="#">Owners</a></li>
+                <li onclick="selectPageByIndex(2, event)"><a href="#">Cars</a></li>
+                <li onclick="selectPageByIndex(3, event)"><a href="#">Insurance</a></li>
+<!--                <li><a href="#">Home</a></li>-->
+<!--                <li><a href="#">Owners</a></li>-->
+<!--                <li><a href="#">Cars</a></li>-->
+<!--                <li><a href="#">Insurance</a></li>-->
             </ul>
         </nav>
     </header>
-
     <main>
         <h2>Add new person</h2>
         <div class="body">
             <form>
-                <div class="form-field grid-col-span-2">
+                <div class="form-field grid-col-span-2 upper-case ">
                     <label for="firs-name">First Name</label>
                     <input type="text" id="firs-name"/>
                 </div>
-                <div class="form-field grid-col-span-2">
+                <div class="form-field grid-col-span-2" onclick="demoEventClick()">
                     <label for="last-name">Last Name</label>
                     <input type="text" id="last-name"/>
                 </div>
@@ -45,12 +49,24 @@
                         <option value="2">Feminine</option>
                         <option value="3">N/A</option>
                     </select>
+
+                    <div class="dropDown">
+                        <div class="option">label option</div>
+                        <div class="option">label option</div>
+                        <div class="option">label option</div>
+                        <div class="option">label option</div>
+                        <div class="option">label option</div>
+                    </div>
                 </div>
+
                 <div class="action-buttons">
                     <button id="submit-button" type="submit">Add person</button>
                 </div>
             </form>
         </div>
     </main>
+    <script src="scripts/demo.js">
+    </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

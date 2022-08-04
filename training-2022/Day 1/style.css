@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #dfdfef;
     --form-bg-color: #ddd;
+    --selected-bg-color: #666;
     --main-border-color: #ccc;
     --main-text-color: #fff;
     --app-green: #4CAF50;
@@ -51,6 +52,11 @@ body ul > li > a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+body ul > li.active > a {
+    color: var(--main-text-color);
+    background-color: var(--selected-bg-color);
 }
 
 body ul > li > a:hover {
