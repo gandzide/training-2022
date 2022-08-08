@@ -1,0 +1,12 @@
+<div>{{ title }}</div>
+
+<div class="car-details">
+  <span>{{ car.brand }}</span>
+  <span>{{ car.year }}</span>
+  <span>{{ car.fuelType || 'not exist' }}</span>
+</div>
+<div class="car-details">
+  <span>{{ car1?.brand || 'not exist'}}</span>
+  <span>{{ car1?.year || 'not exist'}}</span>
+  <span>{{ car1?.fuelType || 'not exist' }}</span>
+</div>
