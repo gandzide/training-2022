@@ -1,0 +1,9 @@
+<form #formId="ngForm" (ngSubmit)="submitForm(formId)">
+  <input name="firstName" ngModel required>
+  <p>Value from input first name: {{firstName}}</p>
+
+  <input name="lastName" ngModel required>
+  <p>Value from input last name: {{lastName}}</p>
+
+  <button type="submit">Submit form</button>
+</form>
