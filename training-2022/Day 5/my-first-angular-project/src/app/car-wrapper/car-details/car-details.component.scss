@@ -1,0 +1,11 @@
+.car-details {
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+
+  span {
+    background-color: darkgray;
+    border: solid 1px black;
+    box-shadow: 1px 4px 10px 0;
+  }
+}
