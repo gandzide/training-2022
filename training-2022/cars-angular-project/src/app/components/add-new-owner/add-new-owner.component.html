@@ -1,0 +1,45 @@
+<h1>{{ componentTitle }}</h1>
+<form #ownerForm="ngForm" (ngSubmit)="submitForm(ownerForm)">
+  <div class="form-field">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="firstName" ngModel />
+  </div>
+
+  <div class="form-field">
+    <label class="right-inline" for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="lastName" ngModel />
+  </div>
+
+  <div class="form-field">
+    <label for="cnp">CNP</label>
+    <input type="text" id="cnp" name="cnp" ngModel />
+  </div>
+
+  <div class="form-field-birthdate">
+    <label for="birthdate"> Birth Date</label>
+    <input type="date" id="birthdate" name="birthDate" ngModel />
+  </div>
+
+  <div class="form-field-gender">
+    <span class="select-gender-label">Gender</span>
+
+    <div id="select-gender">
+      <div class="input"></div>
+      <div class="options">
+        <span>Male</span>
+        <span>Female</span>
+        <span>Other</span>
+      </div>
+    </div>
+
+    <!-- <select id="gender">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">N/A</option>
+                </select> -->
+  </div>
+  <div class="action-buttons">
+    <button id="submit-button" type="submit">Add person</button>
+    <button id="reset-button" type="reset">Reset Form</button>
+  </div>
+</form>

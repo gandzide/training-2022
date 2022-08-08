@@ -1,0 +1,83 @@
+<form #insuranceForm="ngForm" (ngSubmit)="submitForm(insuranceForm)">
+  <div class="form-field">
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company" ngModel />
+  </div>
+
+  <div class="form-field-id">
+    <label for="person-id">ID</label>
+    <select id="person-id">
+      <option value="">ID 1</option>
+      <option value="">ID 2</option>
+      <option value="">ID 3</option>
+    </select>
+  </div>
+
+  <div class="form-field-card">
+    <label for="card-id">Card ID</label>
+    <select id="card-id">
+      <option value="">Card 1</option>
+      <option value="">Card 2</option>
+      <option value="">Card 3</option>
+    </select>
+  </div>
+
+  <div class="form-field-direct">
+    <p style="font-size: large">Direct Pay:</p>
+
+    <label>
+      <input type="checkbox" id="one" />
+      Card</label
+    >
+    <label>
+      <input type="checkbox" id="two" />
+      Revolut</label
+    >
+    <label>
+      <input type="checkbox" id="three" />
+      PayPal</label
+    >
+  </div>
+
+  <div class="form-field-payment">
+    <p style="font-size: large">Payment Type:</p>
+
+    <label>
+      <input type="radio" id="card" />
+      Card</label
+    >
+    <label>
+      <input type="radio" id="revolut" />
+      Revolut</label
+    >
+    <label>
+      <input type="radio" id="paypal" />
+      PayPal</label
+    >
+  </div>
+
+  <div class="form-field-start">
+    <label for="start">Start</label>
+    <input type="date" id="start" name="start" ngModel />
+  </div>
+
+  <div class="form-field-end">
+    <label for="End">End</label>
+    <input type="date" id="end" name="end" ngModel />
+  </div>
+
+  <div class="form-field">
+    <label for="price">Price</label>
+    <input type="number" id="price" name="price" ngModel />
+  </div>
+
+  <div class="form-field-notes">
+    <label for="notes">Notes</label>
+    <textarea id="notes" cols="30" rows="30" name="notes" ngModel></textarea>
+  </div>
+
+  <div class="action-buttons">
+    <button id="submit-button" type="submit">Add person</button>
+    <button id="reset-button" type="reset">Reset Form</button>
+  </div>
+</form>

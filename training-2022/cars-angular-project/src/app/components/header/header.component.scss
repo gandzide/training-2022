@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5rem;
+  width: 100%;
+}
+
+:host ul {
+  display: flex;
+  list-style: none;
+  /* no list dots */
+
+  li a {
+    text-decoration: none;
+    /* no underline */
+    display: block;
+    padding: 14px 16px;
+    background-color: #dfdfef;
+    color: #666;
+  }
+
+  li a:hover {
+    opacity: 0.3;
+  }
+
+  /* Add a gray right border to all list items, except the last item (last-child) */
+  li {
+    border-right: 1px solid #ebcbca;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  /* Add a border radius to the first and last list items (first and last child) */
+  li:first-child > a {
+    border-radius: 5px 0 0 5px;
+  }
+
+  li:last-child > a {
+    border-radius: 0 5px 5px 0;
+  }
+}

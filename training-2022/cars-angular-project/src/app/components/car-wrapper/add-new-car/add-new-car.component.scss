@@ -1,0 +1,81 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .form-field {
+    background-color: #dfdfef;
+    width: calc(50% - 15px);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-field-type,
+  .form-field-owner {
+    background-color: #dfdfef;
+    width: calc(25% - 25px);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-field-radio {
+    display: flex;
+    flex-direction: row;
+    background-color: #dfdfef;
+    width: calc(50% - 15px);
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  #brand,
+  #model,
+  #cubic-cap,
+  #serial-number,
+  #plates,
+  #power,
+  #type,
+  #owner {
+    width: calc(90% - 30px);
+    height: 30px;
+    align-self: center;
+    border-radius: 3px;
+  }
+  label {
+    font-size: large;
+    padding-bottom: 10px;
+    /* align the input in order to be above the beginning of the input */
+    margin-left: 45px;
+    margin-top: 10px;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+  }
+
+  #submit-button,
+  #reset-button {
+    border-color: #4caf50;
+    width: 150px;
+    height: 50px;
+    font-size: large;
+  }
+
+  #submit-button:hover,
+  #reset-button:hover {
+    background-color: #4caf50;
+  }
+}

@@ -1,0 +1,89 @@
+<h1>{{ componentTitle }}</h1>
+<form #carForm="ngForm" (ngSubmit)="submitForm(carForm)">
+  <div class="form-field">
+    <label for="brand">Brand</label>
+    <input type="text" id="brand" name="brand" ngModel />
+  </div>
+
+  <div class="form-field">
+    <label for="model">Model</label>
+    <input type="text" id="model" name="model" ngModel />
+  </div>
+
+  <div class="form-field">
+    <label for="cubic-cap">Cubic Cap</label>
+    <input type="number" id="cubic-cap" name="cubiccap" ngModel />
+  </div>
+
+  <div class="form-field">
+    <label for="serial-number">Serial Number</label>
+    <input type="text" id="serial-number" name="serialNumber" ngModel />
+  </div>
+
+  <div class="form-field-owner">
+    <div class="owner-id-title">
+      <span>Owner ID</span>
+    </div>
+
+    <div class="select">
+      <div class="options hidden">
+        <span class="option">11111</span>
+        <span class="option">22222</span>
+        <span class="option">33333</span>
+        <span class="option">44444</span>
+        <span class="option">55555</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-field-type">
+    <label for="type">Type</label>
+    <select id="type">
+      <option value="">Select Type</option>
+    </select>
+  </div>
+
+  <div class="form-field">
+    <label for="plates">Plates</label>
+    <input type="text" id="plates" name="plates" ngModel />
+  </div>
+
+  <div class="form-field-radio">
+    <p style="font-size: large">Fuel Type:</p>
+
+    <label>
+      <input type="radio" id="diesel" />
+      Diesel</label
+    >
+    <label>
+      <input type="radio" id="petrol" />
+      Petrol</label
+    >
+    <label>
+      <input type="radio" id="gas" />
+      Gas</label
+    >
+
+    <label>
+      <input type="radio" id="gas" />
+      Hybrid</label
+    >
+  </div>
+
+  <div class="form-field">
+    <label for="power">Power</label>
+    <input type="number" id="power" name="power" ngModel />
+  </div>
+
+  <div class="action-buttons">
+    <button id="submit-button" type="submit">Add person</button>
+    <button id="reset-button" type="reset">Reset Form</button>
+  </div>
+</form>
+
+
+
+<!--<div class="form-field">-->
+<!--  <label for="plates-custom">Plates</label>-->
+<!--  <input type="text" id="plates-custom" [(ngModel)]="carLabelCustom" />-->
+<!--</div>-->
