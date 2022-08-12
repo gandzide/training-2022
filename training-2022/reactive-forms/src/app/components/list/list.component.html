@@ -1,0 +1,6 @@
+<div *ngFor="let book of bookList" class="book-card">
+    <h3>Title</h3><h4>{{book.name}}</h4>
+    <h3>Author</h3><p>{{book.author}}</p>
+    <h3>Price</h3><p>{{book.price | currency: "EUR"}}</p>
+    <button (click)="editBook(book)">Edit Book</button>
+</div>

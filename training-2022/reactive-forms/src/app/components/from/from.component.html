@@ -1,0 +1,33 @@
+<div class="test-box">
+    <form [formGroup]="bookForm" (ngSubmit)="submitForm()">
+        <h1>Bank Customer Feedback Form</h1>
+
+        <div class="form-field" [class.error]="bookForm.controls['name'].touched && bookForm.controls['name'].invalid">
+            <h4>Book Name<span>*</span></h4>
+            <input type="text" formControlName="name" />
+            <ng-container *ngIf="bookForm.controls['name'].touched">
+                <small *ngIf="bookForm.controls['name'].hasError('required')" class="error">Name is required!!!</small>
+                <small *ngIf="bookForm.controls['name'].hasError('maxlength')" class="error">Name is to loooong!!!</small>
+            </ng-container>
+        </div>
+
+
+        <div class="form-field">
+            <h4>Author<span>*</span></h4>
+            <input type="text" formControlName="author"/>
+        </div>
+
+        <div class="form-field" [class.error]="bookForm.controls['price'].touched && bookForm.controls['price'].invalid">
+            <h4>Book Name<span>*</span></h4>
+            <input type="number" formControlName="price" />
+            <ng-container *ngIf="bookForm.controls['price'].touched">
+                <small *ngIf="bookForm.controls['price'].hasError('max')" class="error">Ups, it is tooo much!!</small>
+                <small *ngIf="bookForm.controls['price'].hasError('required')" class="error">Price is required</small>
+            </ng-container>
+        </div>
+
+        <div class="btn-block">
+            <button type="submit">Add Book</button>
+        </div>
+    </form>
+</div>

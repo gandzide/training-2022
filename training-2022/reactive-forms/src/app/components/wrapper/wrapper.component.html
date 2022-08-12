@@ -1,0 +1,2 @@
+<app-from [bookToEdit]="bookToEdit" (outputBook)="sendBookToList($event)"></app-from>
+<app-list [newBook]="newBook" (sendToEdit)="setItemToEdit($event)"></app-list>
